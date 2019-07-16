@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-cn-pcA" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="187.5" width="667" height="187.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-2y-oeu">
+                                        <rect key="frame" x="213.5" y="30" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="JuL-HC-npQ"/>
+                                            <constraint firstAttribute="width" constant="240" id="V2A-87-3Ui"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UGs-2y-oeu" firstAttribute="centerY" secondItem="9G0-cn-pcA" secondAttribute="centerY" id="DKj-Rn-5NO"/>
+                                    <constraint firstItem="UGs-2y-oeu" firstAttribute="centerX" secondItem="9G0-cn-pcA" secondAttribute="centerX" id="Om2-uT-4IW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zV-kz-55y" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="187.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="rYG-HX-diC">
+                                        <rect key="frame" x="213.5" y="30" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="MDo-S1-tBQ"/>
+                                            <constraint firstAttribute="height" constant="128" id="Z67-sw-K4X"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rYG-HX-diC" firstAttribute="centerX" secondItem="6zV-kz-55y" secondAttribute="centerX" id="Rbb-0c-S2Y"/>
+                                    <constraint firstItem="rYG-HX-diC" firstAttribute="centerY" secondItem="6zV-kz-55y" secondAttribute="centerY" id="ZJh-Yu-k9W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6zV-kz-55y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="32k-kl-QkC"/>
+                            <constraint firstAttribute="trailing" secondItem="6zV-kz-55y" secondAttribute="trailing" id="3k0-9K-Q3U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9G0-cn-pcA" secondAttribute="bottom" id="8kE-TG-ejO"/>
+                            <constraint firstAttribute="trailing" secondItem="9G0-cn-pcA" secondAttribute="trailing" id="AXK-Wt-OK4"/>
+                            <constraint firstItem="9G0-cn-pcA" firstAttribute="height" secondItem="6zV-kz-55y" secondAttribute="height" id="I1P-vu-Exa"/>
+                            <constraint firstItem="6zV-kz-55y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RCB-cU-skO"/>
+                            <constraint firstItem="9G0-cn-pcA" firstAttribute="top" secondItem="6zV-kz-55y" secondAttribute="bottom" id="cY4-p7-m4t"/>
+                            <constraint firstItem="9G0-cn-pcA" firstAttribute="top" secondItem="6zV-kz-55y" secondAttribute="bottom" id="qMI-Q1-Jyx"/>
+                            <constraint firstItem="9G0-cn-pcA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ttJ-8Z-wUj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="artBoard" width="433" height="533"/>
+        <image name="notebook" width="373.5" height="527"/>
+    </resources>
+</document>
